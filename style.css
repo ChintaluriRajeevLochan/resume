@@ -1,0 +1,300 @@
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: black;
+    color: white;
+
+}
+.header{
+    width: 100%;
+    margin: 0%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.8),rgba(0,0,0,0.5), rgba(0,0,0,0.8)),url('https://assets.nflxext.com/ffe/siteui/vlv3/93da5c27-be66-427c-8b72-5cb39d275279/94eb5ad7-10d8-4cca-bf45-ac52e0a052c0/IN-en-20240226-popsignuptwoweeks-perspective_alpha_website_medium.jpg');
+    background-position: center;
+    padding: 10px 8%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 47px;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+nav button{
+    border: 0;
+    background: #db0001;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 7px 20px;
+    border-radius: 4px;
+    margin-left: 13px;
+    cursor: pointer;
+
+}
+.bt{
+    display: inline-flex;
+    background: transparent;
+    color: white;
+    border: 1px solid  rgb(149, 147, 147);
+    padding: 7px 10px;
+    align-items: center;
+}
+.down-icon{
+    width: 10px;
+    margin-left: 10px;
+}
+.content{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+}
+.content h1 {
+    font-size: 41px;
+    margin: 0 auto;
+    padding: 0 20px; 
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+}
+
+.content h3{
+    font-weight: 400;
+    font-size: 28px;
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.content p{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.email {
+    display: flex;
+    font-size: 28px;
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.email input[type="email"] {
+    width: 400px; 
+    padding: 15px 8px;
+    border: 1px solid rgb(149, 147, 147);
+    color: white;
+    border-radius: 1px;
+    background-color: rgba(0,0, 0, 0.5); 
+    margin-right: 10px;
+}
+
+.email button[type="submit"] {
+    padding: 10px 20px; 
+    border: none;
+    font-size: 25px;
+    border-radius: 5px;
+    background-color: red; 
+    color: white;
+    font-weight: bold;
+}
+.right{
+    width: 10px;
+    margin-left: 10px;
+    
+    filter: brightness(0) invert(1);
+    
+}
+.features{
+    padding: 50px 12%;
+    font-size: 22px;
+    margin: 0;
+
+}
+.row{
+    display: flex;
+    width: 100%;
+    border-top: 5px solid gray;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.text{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+
+}
+.imgc{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.imgc img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.tv{
+    position: relative;
+}
+
+.tv img{
+    width: 100%;
+}
+
+.tv video{
+    position: absolute;
+    width: 86%;
+    top: 70px;
+    left: 70px;
+    z-index: -1;
+}
+.download{
+    position: relative;
+}
+
+.download img{
+    width: 100%;
+}
+
+#downloading{
+    position: absolute;
+    background: url('images/download-icon.gif') center center no-repeat;
+    background-size: 40%;
+    width: 10rem;
+    height: 10rem;
+    bottom: 35px;
+    right: 70px;
+}
+.device{
+    position: relative;
+}
+
+.device img{
+    width: 100%;
+}
+
+.device video{
+    position: absolute;
+    width: 65%;
+    top: 50px;
+    left: 92px;
+    z-index: -1;
+}
+.text h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800px;
+}
+.text p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top: 5px solid gray;
+       
+}  
+.faq h2{
+    font-weight: 500;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif
+
+}
+
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background:#303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.05s;
+}
+input[type="checkbox"]{
+    display: none;
+}
+.accordion .faqcontent{
+    background: #3030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1ms, padding 1ms;
+
+}
+.accordion input[type="checkbox"]:checked + label + .faqcontent{
+    max-height: 600px;
+    padding: 30px 20px;
+} 
+
+.accordion input[type="checkbox"]:checked + label::after{
+    transform: rotate(135deg);
+}
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #303030;
+    color: #777;
+}
+
+.footer h2{
+    font-size: 10px; 
+    font-weight: 400;
+    margin-bottom: 30;
+
+}
+.col{
+    flex-basis:25%;
+    flex-grow: 1;
+    margin-bottom: 23px;
+
+}
+.col a{
+    display:block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.row1{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 10px 0 ; 
+    justify-content: space-between;
+}
